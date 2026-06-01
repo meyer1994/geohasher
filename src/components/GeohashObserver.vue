@@ -63,7 +63,7 @@ function makeDot(color: string) {
   return L.divIcon({
     className: '',
     html: `<div style="width:14px;height:14px;border-radius:50%;background:${color};
-      border:2px solid #0c0f12;box-shadow:0 0 0 2px ${color}66"></div>`,
+      border:2px solid #0a1218;box-shadow:0 0 0 2px ${color}66"></div>`,
     iconSize: [14, 14],
     iconAnchor: [7, 7],
   }) as unknown as L.Icon
@@ -170,7 +170,7 @@ watch(autoFit, (v) => {
 
   <header
     class="absolute top-0 left-0 right-0 z-[1000] px-[14px] py-[10px] flex items-baseline gap-[10px] pointer-events-none"
-    style="background: linear-gradient(180deg, rgba(12,15,18,.92), rgba(12,15,18,0))"
+    style="background: linear-gradient(180deg, rgba(10,18,24,.92), rgba(10,18,24,0))"
   >
     <h1 class="font-syne font-extrabold text-[18px] tracking-[-0.5px] m-0">Geohash Observer</h1>
     <span class="text-dim text-[11px] tracking-[0.5px]">nudge any character ±1</span>

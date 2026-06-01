@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0c0f12;
-  --color-panel: #13181d;
-  --color-line: #222a31;
-  --color-line-strong: #3a4651;
-  --color-ink: #e7ecf0;
-  --color-dim: #7d8b97;
-  --color-surface: #0f1419;
-  --color-surface-2: #171d24;
-  --color-surface-on: #222c35;
+  /* sampled from the filtered OSM tiles: dark teal-slate with cyan water */
+  --color-bg: #0a1218;
+  --color-panel: #11202b;
+  --color-line: #1f3441;
+  --color-line-strong: #3b5567;
+  --color-ink: #cfe2ec;
+  --color-dim: #6f8a9c;
+  --color-surface: #0e1a23;
+  --color-surface-2: #16252f;
+  --color-surface-on: #213442;
   --color-a: #ffb22e;
   --color-b: #36d3e0;
   --color-mid: #c06bff;
