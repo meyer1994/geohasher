@@ -147,8 +147,14 @@ watch(autoFit, (v) => {
         dash-array="5 5"
         :opacity="0.8"
       />
-      <LMarker :lat-lng="centerA" :icon="iconA" />
-      <LMarker :lat-lng="centerB" :icon="iconB" />
+      <LMarker
+        :lat-lng="centerA"
+        :icon="iconA"
+      />
+      <LMarker
+        :lat-lng="centerB"
+        :icon="iconB"
+      />
       <LCircleMarker
         :lat-lng="mid"
         :radius="4"
@@ -172,11 +178,17 @@ watch(autoFit, (v) => {
     class="absolute top-0 left-0 right-0 z-[1000] px-[14px] py-[10px] flex items-baseline gap-[10px] pointer-events-none"
     style="background: linear-gradient(180deg, rgba(10,18,24,.92), rgba(10,18,24,0))"
   >
-    <h1 class="font-syne font-extrabold text-[18px] tracking-[-0.5px] m-0">Geohash Observer</h1>
+    <h1 class="font-syne font-extrabold text-[18px] tracking-[-0.5px] m-0">
+      Geohash Observer
+    </h1>
     <span class="text-dim text-[11px] tracking-[0.5px]">nudge any character ±1</span>
   </header>
 
-  <StatsBar :dist-km="distKm" :bearing-deg="bearingDeg" :mid="mid" />
+  <StatsBar
+    :dist-km="distKm"
+    :bearing-deg="bearingDeg"
+    :mid="mid"
+  />
 
   <div
     class="absolute z-[1000] left-0 right-0 bottom-0 bg-panel border-t border-line flex flex-col gap-[10px]"

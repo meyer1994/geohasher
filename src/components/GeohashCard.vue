@@ -54,15 +54,21 @@ const chColor = computed(() => (props.point === 'A' ? 'text-a' : 'text-b'))
           class="w-full h-5 border border-line bg-surface-2 text-dim rounded-[5px] text-[11px] cursor-pointer leading-none p-0 active:bg-surface-on active:text-ink"
           :style="btnStyle(i, 1)"
           @click="emit('nudge', i, 1)"
-        >▲</button>
+        >
+          ▲
+        </button>
         <div
           :class="['text-[19px] font-semibold leading-none py-[2px] w-full text-center rounded-[5px]', chColor]"
-        >{{ ch }}</div>
+        >
+          {{ ch }}
+        </div>
         <button
           class="w-full h-5 border border-line bg-surface-2 text-dim rounded-[5px] text-[11px] cursor-pointer leading-none p-0 active:bg-surface-on active:text-ink"
           :style="btnStyle(i, -1)"
           @click="emit('nudge', i, -1)"
-        >▼</button>
+        >
+          ▼
+        </button>
       </div>
     </div>
   </div>

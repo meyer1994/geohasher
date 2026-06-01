@@ -34,7 +34,12 @@ const segBtn =
         {{ m.label }}
       </button>
     </div>
-    <button :class="miniBtn" @click="emit('fit')">FIT</button>
+    <button
+      :class="miniBtn"
+      @click="emit('fit')"
+    >
+      FIT
+    </button>
     <button
       :class="[miniBtn, props.autoFit && '!bg-surface-on !text-ink !border-line-strong']"
       @click="emit('update:autoFit', !props.autoFit)"
