@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0c0f12;
+  --color-panel: #13181d;
+  --color-line: #222a31;
+  --color-line-strong: #3a4651;
+  --color-ink: #e7ecf0;
+  --color-dim: #7d8b97;
+  --color-surface: #0f1419;
+  --color-surface-2: #171d24;
+  --color-surface-on: #222c35;
+  --color-a: #ffb22e;
+  --color-b: #36d3e0;
+  --color-mid: #c06bff;
+  --color-danger: #f87171;
+  --color-danger-bg: #2a1416;
+
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-syne: 'Syne', sans-serif;
+}
+
+html, body, #app {
+  margin: 0;
+  height: 100%;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.leaflet-container {
+  background: var(--color-bg);
+}
