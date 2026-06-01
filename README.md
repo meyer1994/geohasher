@@ -1,5 +1,18 @@
-# Vue 3 + TypeScript + Vite
+# Geohash Observer
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+An interactive Vue 3 + Leaflet visualizer for two geohashes. Nudge any base-32
+character ±1 (buttons or mouse wheel), carry/borrow propagates through
+more-significant digits, and the map shows both points, their connecting line,
+midpoint, and a fading-free trail of every move — colored by position,
+direction, or point. Built with `vue-leaflet`, `ngeohash`, `@turf/*` for geo
+math, and Tailwind v4.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Scripts
+
+```sh
+pnpm dev         # start vite dev server
+pnpm build       # typecheck + production build
+pnpm preview     # preview the production build
+pnpm lint        # eslint
+pnpm typecheck   # vue-tsc --noEmit
+```
